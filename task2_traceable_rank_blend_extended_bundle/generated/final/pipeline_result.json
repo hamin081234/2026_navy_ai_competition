@@ -1,0 +1,52 @@
+{
+  "variant": "extended_validation_backed_rank_fusion",
+  "scheme": "topheavy",
+  "scheme_values": [
+    1.0,
+    0.3499999940395355,
+    0.20000000298023224,
+    0.11999999731779099,
+    0.07999999821186066
+  ],
+  "sources": [
+    {
+      "label": "multirun_balanced",
+      "weight": 0.65,
+      "validation": "validation_multirun_balanced.csv",
+      "submission": "submission_multirun_balanced.csv"
+    },
+    {
+      "label": "multirun_val086_robust",
+      "weight": 1.44576,
+      "validation": "validation_multirun_val086_robust.csv",
+      "submission": "submission_multirun_val086_robust.csv"
+    },
+    {
+      "label": "public_refined_validation_backed",
+      "weight": 1.5,
+      "validation": "validation_public_refined_validation_backed.csv",
+      "submission": "submission_public_refined_validation_backed.csv"
+    }
+  ],
+  "outputs": {
+    "validation": "generated/final/validation_task2_rank_fusion_extended.csv",
+    "submission": "generated/final/submission_task2_rank_fusion_extended.csv",
+    "submission_sha256": "6ae20ebb7a969358e1df572735fc298281386337964bfad2a8b9901a2d2bd3c9"
+  },
+  "scores": {
+    "validation": {
+      "R@1": 0.058941728064300064,
+      "R@3": 0.10850636302746149,
+      "R@5": 0.1567314132618888,
+      "Score": 0.09336905559276623
+    },
+    "public": {
+      "R@1": 0.07395498392282958,
+      "R@3": 0.13569131832797426,
+      "R@5": 0.1967845659163987,
+      "Score": 0.11704180064308681
+    }
+  },
+  "expected_public_score": 0.11704180064308681,
+  "public_score_matches_expected": true
+}

@@ -1,0 +1,36 @@
+{
+  "run_meta": {
+    "run_name": "frozen_panns_cnn14_audio",
+    "model": "panns",
+    "device": "cuda",
+    "args": {
+      "data_dir": "database",
+      "out_dir": "outputs/task2_runs",
+      "model": "panns",
+      "run_name": "frozen_panns_cnn14_audio",
+      "batch_size": 128,
+      "device": "cuda"
+    },
+    "rows": {
+      "gallery": 6696,
+      "reference": 6696,
+      "val": 1493,
+      "test": 1555
+    }
+  },
+  "best_validation": {
+    "retrieval": "prototype",
+    "topk": null,
+    "weights": null,
+    "alpha": 0.03,
+    "R@1": 0.04822505023442733,
+    "R@3": 0.09444072337575352,
+    "R@5": 0.130609511051574,
+    "Score": 0.07856664434025451
+  },
+  "submission_validation_errors": [],
+  "artifacts": {
+    "submission": "outputs/task2_runs/frozen_panns_cnn14_audio/submission_task2.csv",
+    "leaderboard": "outputs/task2_runs/frozen_panns_cnn14_audio/retrieval_leaderboard.csv"
+  }
+}

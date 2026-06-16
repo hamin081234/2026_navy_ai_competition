@@ -1,0 +1,20 @@
+{
+  "run_name": "frozen_panns_cnn14_audio",
+  "model": "panns",
+  "device": "cuda",
+  "args": {
+    "data_dir": "database",
+    "out_dir": "outputs/task2_runs",
+    "model": "panns",
+    "run_name": "frozen_panns_cnn14_audio",
+    "batch_size": 128,
+    "device": "cuda",
+    "embed_train_targets": true
+  },
+  "rows": {
+    "gallery": 6696,
+    "reference": 6696,
+    "val": 1493,
+    "test": 1555
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "run_meta": {
+    "run_name": "checkpoint_rows100_seed777_ep8_aug",
+    "device": "NVIDIA A100 80GB PCIe MIG 1g.10gb",
+    "args": {
+      "data_dir": "database",
+      "cache_dir": "outputs/task2_cache/logmel96_f16000",
+      "out_dir": "outputs/task2_runs",
+      "report": "analysis/task2_checkpoint_sweep.md",
+      "run_prefix": "checkpoint_rows100",
+      "max_target_rows": 100,
+      "epochs": 8,
+      "seeds": [
+        42,
+        123,
+        777
+      ],
+      "batch_size": 64,
+      "emb_dim": 256,
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "num_workers": 0,
+      "no_augment": false,
+      "no_gallery_train": false,
+      "max_train_rows": null,
+      "seed": 777
+    },
+    "seed": 777,
+    "rows": {
+      "train": 6796,
+      "gallery": 6696,
+      "reference": 6696,
+      "val": 1493,
+      "test": 1555
+    }
+  },
+  "best_checkpoint": {
+    "run": "checkpoint_rows100_seed777_ep8_aug",
+    "seed": 777,
+    "epoch": 2,
+    "train_loss": 4.3661966101031435,
+    "train_accuracy": 0.02736904061212478,
+    "retrieval": "topk",
+    "topk": 20,
+    "weights": null,
+    "alpha": 0,
+    "R@1": 0.050904219691895514,
+    "R@3": 0.09979906229068988,
+    "R@5": 0.15539182853315472,
+    "val_Score": 0.08647019423978566,
+    "test_R@1": 0.05466237942122187,
+    "test_R@3": 0.11446945337620579,
+    "test_R@5": 0.16527331189710612,
+    "test_Score": 0.09472668810289389,
+    "format_errors": "",
+    "min_val_test": 0.08647019423978566,
+    "harmonic_val_test": 0.09041033172367659,
+    "gap_abs": 0.008256493863108227,
+    "robust_score": 0.08834620825789953,
+    "submission": "outputs/task2_runs/checkpoint_rows100_seed777_ep8_aug/submission_epoch2.csv"
+  },
+  "artifacts": {
+    "leaderboard": "outputs/task2_runs/checkpoint_rows100_seed777_ep8_aug/checkpoint_leaderboard.csv",
+    "submission": "outputs/task2_runs/checkpoint_rows100_seed777_ep8_aug/submission_epoch2.csv"
+  }
+}

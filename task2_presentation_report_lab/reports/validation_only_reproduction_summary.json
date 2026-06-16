@@ -1,0 +1,45 @@
+{
+  "method": "validation_first_manual_fusion_reproduced",
+  "selection_basis": "validation_only",
+  "rank_weights": [1.0, 0.62, 0.40, 0.25, 0.16],
+  "source_weights": [
+    {
+      "name": "tree_reranker_random_forest",
+      "weight": 1.0,
+      "validation_source_copy": "task2_validation_first_fusion_lab/sources/validation_first_manual_fusion_reproduced/step00__validation__validation_random_forest.csv",
+      "validation_source_sha256": "e7a523c7edbf7aa1d14b1e9fc7b886f298e2a45918f3ae2352e40b2e38c48be3"
+    },
+    {
+      "name": "panns_type_aware_projection",
+      "weight": 0.45,
+      "validation_source_copy": "task2_validation_first_fusion_lab/sources/validation_first_manual_fusion_reproduced/step01__validation__validation_epoch1_config37.csv",
+      "validation_source_sha256": "5918983b258b779ec1691ad966223939c2bed62cde65ba2aef9ab433f67199e1"
+    },
+    {
+      "name": "extended_hgb_wide_reranker",
+      "weight": 0.1,
+      "validation_source_copy": "task2_validation_first_fusion_lab/sources/validation_first_manual_fusion_reproduced/step02__validation__validation_hgb_wide.csv",
+      "validation_source_sha256": "804043df4d8d0bcfd123555660310f43fa9817c26592eeefa71e0f4f7a5a4c97"
+    },
+    {
+      "name": "reciprocal_refined_source",
+      "weight": 0.2,
+      "validation_source_copy": "task2_validation_first_fusion_lab/sources/validation_first_manual_fusion_reproduced/step03__validation__validation_refined_reciprocal.csv",
+      "validation_source_sha256": "5ca9fee11019eda01ed9eb2f515c0ad2fb7977f055bddb8bed1abbac56428118"
+    },
+    {
+      "name": "type_gated_retrieval",
+      "weight": 0.08,
+      "validation_source_copy": "task2_validation_first_fusion_lab/sources/validation_first_manual_fusion_reproduced/step04__validation__validation_soft_topk_15_topk_20_b0p5.csv",
+      "validation_source_sha256": "e22d9618e8229e5e0700cd97c0c6e37f5cde3e18090da281b596e217441195d0"
+    }
+  ],
+  "validation_metric": {
+    "R@1": 0.09042196918955124,
+    "R@3": 0.2103148024112525,
+    "R@5": 0.28600133958472873,
+    "Score": 0.16550569323509712
+  },
+  "validation_prediction": "task2_validation_first_fusion_lab/outputs/validation_first_rank_fusion/validation_task2_validation_first_manual_fusion_reproduced.csv",
+  "validation_prediction_sha256": "5d25ba45e321250d73ee43e0e0d27a8e85acb1f34cf7be79c67aed007b94fb81"
+}

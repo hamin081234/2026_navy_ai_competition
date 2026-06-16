@@ -1,0 +1,67 @@
+{
+  "candidates": [
+    {
+      "name": "r100s123_conservative",
+      "run": "robust_rows100_seed123_ep2_aug",
+      "weights": {
+        "clip20": 0.85,
+        "ais5": 0.05,
+        "ais10": 0.1
+      }
+    },
+    {
+      "name": "r80s123_balanced",
+      "run": "robust_rows80_seed123_ep2_aug",
+      "weights": {
+        "clip20": 0.85,
+        "ais5": 0.15,
+        "ais10": 0.0
+      }
+    },
+    {
+      "name": "r100s777_conservative",
+      "run": "robust_rows100_seed777_ep2_aug",
+      "weights": {
+        "clip20": 0.9,
+        "ais5": 0.05,
+        "ais10": 0.05
+      }
+    },
+    {
+      "name": "r100s123_val086",
+      "run": "robust_rows100_seed123_ep2_aug",
+      "weights": {
+        "clip20": 0.1,
+        "ais5": 0.4,
+        "ais10": 0.5
+      }
+    }
+  ],
+  "best_balanced": {
+    "label": "balanced",
+    "validation_submission": "generated/multirun_score_ensemble_from_stored_embeddings/validation_task2_multirun_score_ensemble_balanced.csv",
+    "submission": "generated/multirun_score_ensemble_from_stored_embeddings/submission_task2_multirun_score_ensemble_balanced.csv",
+    "weights": "(0.0, 0.95, 0.05, 0.0)",
+    "w_r100s123_conservative": 0.0,
+    "w_r80s123_balanced": 0.95,
+    "w_r100s777_conservative": 0.05,
+    "w_r100s123_val086": 0.0,
+    "official_R@1": 0.046215673141326186,
+    "official_R@3": 0.0971198928332217,
+    "official_R@5": 0.1480241125251172,
+    "official_Score": 0.08184862692565305,
+    "official_top1_unique": 33,
+    "official_top1_max_fraction": 0.5699933020763563,
+    "robust_mean_score": 0.12003604484469443,
+    "robust_min_score": 0.09417019275975552,
+    "robust_std_score": 0.022926239101376193,
+    "robust_mean_top1_max_fraction": 0.48182376082889944,
+    "balanced_score": 0.16347077283877176,
+    "conservative_score": 0.12893372330553082
+  },
+  "outputs": {
+    "leaderboard": "generated/multirun_score_ensemble_from_stored_embeddings/ensemble_leaderboard.csv",
+    "split_scores": "generated/multirun_score_ensemble_from_stored_embeddings/ensemble_split_scores.csv",
+    "selected_submissions": "generated/multirun_score_ensemble_from_stored_embeddings/ensemble_selected_submissions.csv"
+  }
+}

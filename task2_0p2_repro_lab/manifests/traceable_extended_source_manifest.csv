@@ -1,0 +1,4 @@
+label,weight,validation_file,submission_file
+multirun_balanced,0.65,sources/validation_multirun_balanced.csv,sources/submission_multirun_balanced.csv
+multirun_val086_robust,1.44576,sources/validation_multirun_val086_robust.csv,sources/submission_multirun_val086_robust.csv
+public_refined_validation_backed,1.5,sources/validation_public_refined_validation_backed.csv,sources/submission_public_refined_validation_backed.csv

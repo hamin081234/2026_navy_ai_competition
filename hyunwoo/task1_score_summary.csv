@@ -1,0 +1,5 @@
+file,task,n,status,Accuracy
+hyunwoo/all_candidates_greedy_segmented_ensemble_v2_submission.csv,task1,2669,ok,0.9460472086923941
+hyunwoo/valid_greedy_segmented_ensemble_submission.csv,task1,2669,ok,0.8928437617085051
+hyunwoo/prior_augmented_segmented_ensemble_submission.csv,task1,2669,ok,0.880854252529037
+hyunwoo/month_prior_segmented_ensemble_submission.csv,task1,2669,ok,0.8771075309104533

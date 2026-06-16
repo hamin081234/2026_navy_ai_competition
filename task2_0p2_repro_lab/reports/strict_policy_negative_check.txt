@@ -1,0 +1,9 @@
+Command:
+python scripts/strict_rank_blend.py --manifest manifests/candidates.json --scheme topheavy --source traceable_multirun_balanced=1.0 --source public_refined_validation_backed_preserved=1.0 --out outputs/should_not_exist_preserved_source.csv --result reports/should_fail_preserved_source.json
+
+Expected result:
+Failure.
+
+Observed result:
+ValueError: strict blend refuses source without blend_allowed=true: public_refined_validation_backed_preserved
+

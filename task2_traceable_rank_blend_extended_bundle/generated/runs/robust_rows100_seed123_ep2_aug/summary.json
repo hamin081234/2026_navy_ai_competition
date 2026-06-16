@@ -1,0 +1,47 @@
+{
+  "run_meta": {
+    "run_name": "robust_rows100_seed123_ep2_aug",
+    "device": "NVIDIA A100 80GB PCIe MIG 1g.10gb",
+    "args": {
+      "data_dir": "database",
+      "cache_dir": "outputs/task2_cache/logmel96_f16000",
+      "out_dir": "outputs/task2_runs",
+      "run_name": "robust_rows100_seed123_ep2_aug",
+      "epochs": 2,
+      "max_train_minutes": null,
+      "max_train_rows": null,
+      "max_target_rows": 100,
+      "no_augment": false,
+      "batch_size": 64,
+      "emb_dim": 256,
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "num_workers": 0,
+      "seed": 123,
+      "no_gallery_train": false
+    },
+    "rows": {
+      "train": 6796,
+      "gallery": 6696,
+      "reference": 6696,
+      "val": 1493,
+      "test": 1555
+    }
+  },
+  "best_validation": {
+    "retrieval": "topk",
+    "topk": 10,
+    "weights": null,
+    "alpha": 0,
+    "R@1": 0.046215673141326186,
+    "R@3": 0.09109176155391828,
+    "R@5": 0.13529805760214333,
+    "Score": 0.07749497655726725
+  },
+  "submission_validation_errors": [],
+  "artifacts": {
+    "submission": "outputs/task2_runs/robust_rows100_seed123_ep2_aug/submission_task2.csv",
+    "leaderboard": "outputs/task2_runs/robust_rows100_seed123_ep2_aug/retrieval_leaderboard.csv",
+    "model": "outputs/task2_runs/robust_rows100_seed123_ep2_aug/model_last.pt"
+  }
+}

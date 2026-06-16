@@ -1,0 +1,19 @@
+{
+  "run_name": "frozen_clap_audio",
+  "model": "clap",
+  "device": "cuda",
+  "args": {
+    "data_dir": "database",
+    "out_dir": "outputs/task2_runs",
+    "model": "clap",
+    "run_name": "frozen_clap_audio",
+    "batch_size": 8,
+    "device": "cuda"
+  },
+  "rows": {
+    "gallery": 6696,
+    "reference": 6696,
+    "val": 1493,
+    "test": 1555
+  }
+}

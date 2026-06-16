@@ -1,0 +1,19 @@
+{
+  "run_name": "frozen_ast_audio",
+  "model": "ast",
+  "device": "cuda",
+  "args": {
+    "data_dir": "database",
+    "out_dir": "outputs/task2_runs",
+    "model": "ast",
+    "run_name": "frozen_ast_audio",
+    "batch_size": 16,
+    "device": "cuda"
+  },
+  "rows": {
+    "gallery": 6696,
+    "reference": 6696,
+    "val": 1493,
+    "test": 1555
+  }
+}

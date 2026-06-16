@@ -1,0 +1,20 @@
+{
+  "run_name": "frozen_efficientnet_b0_logmel96_f16000",
+  "model": "efficientnet_b0",
+  "device": "NVIDIA A100 80GB PCIe MIG 1g.10gb",
+  "args": {
+    "data_dir": "database",
+    "cache_dir": "outputs/task2_cache/logmel96_f16000",
+    "out_dir": "outputs/task2_runs",
+    "model": "efficientnet_b0",
+    "run_name": "frozen_efficientnet_b0_logmel96_f16000",
+    "batch_size": 48,
+    "num_workers": 0
+  },
+  "rows": {
+    "gallery": 6696,
+    "reference": 6696,
+    "val": 1493,
+    "test": 1555
+  }
+}

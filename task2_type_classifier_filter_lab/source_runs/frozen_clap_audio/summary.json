@@ -1,0 +1,36 @@
+{
+  "run_meta": {
+    "run_name": "frozen_clap_audio",
+    "model": "clap",
+    "device": "cuda",
+    "args": {
+      "data_dir": "database",
+      "out_dir": "outputs/task2_runs",
+      "model": "clap",
+      "run_name": "frozen_clap_audio",
+      "batch_size": 8,
+      "device": "cuda"
+    },
+    "rows": {
+      "gallery": 6696,
+      "reference": 6696,
+      "val": 1493,
+      "test": 1555
+    }
+  },
+  "best_validation": {
+    "retrieval": "topk",
+    "topk": 10,
+    "weights": null,
+    "alpha": 0,
+    "R@1": 0.02344273275284662,
+    "R@3": 0.07635632953784327,
+    "R@5": 0.11855324849296718,
+    "Score": 0.058338914936369723
+  },
+  "submission_validation_errors": [],
+  "artifacts": {
+    "submission": "outputs/task2_runs/frozen_clap_audio/submission_task2.csv",
+    "leaderboard": "outputs/task2_runs/frozen_clap_audio/retrieval_leaderboard.csv"
+  }
+}

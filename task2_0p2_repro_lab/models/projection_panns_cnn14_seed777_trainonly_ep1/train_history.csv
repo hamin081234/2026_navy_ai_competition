@@ -1,0 +1,2 @@
+epoch,train_loss,train_accuracy,best_retrieval,best_topk,best_weights,best_alpha,best_R@1,best_R@3,best_R@5,best_Score
+1,4.5420189645555284,0.031025936089227227,topk,10,,0,0.03951774949765573,0.08372404554588078,0.12190221031480242,0.06925653047555258

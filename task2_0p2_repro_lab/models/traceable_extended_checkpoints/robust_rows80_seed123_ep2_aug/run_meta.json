@@ -1,0 +1,29 @@
+{
+  "run_name": "robust_rows80_seed123_ep2_aug",
+  "device": "NVIDIA A100 80GB PCIe MIG 1g.10gb",
+  "args": {
+    "data_dir": "database",
+    "cache_dir": "outputs/task2_cache/logmel96_f16000",
+    "out_dir": "outputs/task2_runs",
+    "run_name": "robust_rows80_seed123_ep2_aug",
+    "epochs": 2,
+    "max_train_minutes": null,
+    "max_train_rows": null,
+    "max_target_rows": 80,
+    "no_augment": false,
+    "batch_size": 64,
+    "emb_dim": 256,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "num_workers": 0,
+    "seed": 123,
+    "no_gallery_train": false
+  },
+  "rows": {
+    "train": 6776,
+    "gallery": 6696,
+    "reference": 6696,
+    "val": 1493,
+    "test": 1555
+  }
+}

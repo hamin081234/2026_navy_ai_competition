@@ -1,0 +1,5 @@
+name,run,weights
+r100s123_conservative,robust_rows100_seed123_ep2_aug,"{'clip20': 0.85, 'ais5': 0.05, 'ais10': 0.1}"
+r80s123_balanced,robust_rows80_seed123_ep2_aug,"{'clip20': 0.85, 'ais5': 0.15, 'ais10': 0.0}"
+r100s777_conservative,robust_rows100_seed777_ep2_aug,"{'clip20': 0.9, 'ais5': 0.05, 'ais10': 0.05}"
+r100s123_val086,robust_rows100_seed123_ep2_aug,"{'clip20': 0.1, 'ais5': 0.4, 'ais10': 0.5}"

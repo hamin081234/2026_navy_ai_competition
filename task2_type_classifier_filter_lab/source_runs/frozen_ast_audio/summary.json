@@ -1,0 +1,36 @@
+{
+  "run_meta": {
+    "run_name": "frozen_ast_audio",
+    "model": "ast",
+    "device": "cuda",
+    "args": {
+      "data_dir": "database",
+      "out_dir": "outputs/task2_runs",
+      "model": "ast",
+      "run_name": "frozen_ast_audio",
+      "batch_size": 16,
+      "device": "cuda"
+    },
+    "rows": {
+      "gallery": 6696,
+      "reference": 6696,
+      "val": 1493,
+      "test": 1555
+    }
+  },
+  "best_validation": {
+    "retrieval": "topk",
+    "topk": 10,
+    "weights": null,
+    "alpha": 0,
+    "R@1": 0.03148024112525117,
+    "R@3": 0.0810448760884126,
+    "R@5": 0.11386470194239785,
+    "Score": 0.06282652377762893
+  },
+  "submission_validation_errors": [],
+  "artifacts": {
+    "submission": "outputs/task2_runs/frozen_ast_audio/submission_task2.csv",
+    "leaderboard": "outputs/task2_runs/frozen_ast_audio/retrieval_leaderboard.csv"
+  }
+}

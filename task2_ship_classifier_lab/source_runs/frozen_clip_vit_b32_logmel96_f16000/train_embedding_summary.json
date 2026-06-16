@@ -1,0 +1,10 @@
+{
+  "run_dir": "outputs/task2_runs/frozen_clip_vit_b32_logmel96_f16000",
+  "model": "clip_vit_b32",
+  "train_rows": 22594,
+  "embedding_shape": [
+    22594,
+    768
+  ],
+  "artifact": "outputs/task2_runs/frozen_clip_vit_b32_logmel96_f16000/train_embeddings.npy"
+}

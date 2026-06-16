@@ -1,0 +1,53 @@
+{
+  "device": "cuda",
+  "runs": [
+    {
+      "run": "robust_rows100_seed123_ep2_aug",
+      "reference_embeddings": [
+        6696,
+        256
+      ],
+      "val_embeddings": [
+        1493,
+        256
+      ],
+      "test_embeddings": [
+        1555,
+        256
+      ],
+      "output": "generated/runs/robust_rows100_seed123_ep2_aug"
+    },
+    {
+      "run": "robust_rows80_seed123_ep2_aug",
+      "reference_embeddings": [
+        6696,
+        256
+      ],
+      "val_embeddings": [
+        1493,
+        256
+      ],
+      "test_embeddings": [
+        1555,
+        256
+      ],
+      "output": "generated/runs/robust_rows80_seed123_ep2_aug"
+    },
+    {
+      "run": "robust_rows100_seed777_ep2_aug",
+      "reference_embeddings": [
+        6696,
+        256
+      ],
+      "val_embeddings": [
+        1493,
+        256
+      ],
+      "test_embeddings": [
+        1555,
+        256
+      ],
+      "output": "generated/runs/robust_rows100_seed777_ep2_aug"
+    }
+  ]
+}
